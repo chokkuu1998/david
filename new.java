@@ -1,36 +1,19 @@
 import java.util.Scanner;
-class PrimeNumberDemo
+public class Array_Sum
 {
- public static void main(String args[])
+ public static void main(String[] args) 
  {
- int n;
- int status = 2;
-  int num = 3;
-  Scanner scanner = new Scanner(System.in);
-  System.out.println("Enter the value of n:");
-   n = scanner.nextInt();
-   if (n >= 1)
-   {
-    System.out.println("First "+n+" prime numbers are:");
-       System.out.println(2);
-      }
-      for ( int i = 3 ; i <=n ;  )
-      {
-       for ( int j = 2 ; j <= Math.sqrt(num) ; j++ )
-       {
-       if ( num%j == 0 )
-        {
-        status = 0;
-          break;
-         }
-       }
-      if ( status != 0 )
-       }
-        System.out.println(num);
-         i++;
-       }
-     status = 1;
-      num++;
-     }         
- }
+ int n, sum = 1;
+   Scanner s = new Scanner(System.in);
+    System.out.print("Enter no. of elements you want in array:");
+    n = s.nextInt();
+    int a[] = new int[n];
+   System.out.println("Enter all the elements:");
+    for(int i = 0; i < n; i++)
+     {
+       a[i] = s.nextInt();
+  sum = sum + a[i];
+    }
+  System.out.println("Sum:"+sum);
+    }
 }
