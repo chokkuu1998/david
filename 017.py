@@ -1,20 +1,20 @@
-zz, yy, xx, ww = map(int, input().split())
-cc = 0
-aa =yy-xx
-if (aa >= 0):
-    d = (zz-xx)*2
-    for i in range (ww):
-        if (i == ww-1):
-             d =d/ 2
-        if (aa < d):
-            aa = y
-            cc += 1
-        aa = aa - d
-        if (aa < 0):
+ooo, aaa, fff, kkk = map(int, input().split())
+count = 0
+aa2 = aa-ff
+if (aa2 >= 0):
+    di = (oo-ff)*2
+    for i in range (kk):
+        if (i == kk-1):
+             di =di/ 2
+        if (aa2 < di):
+            aa2 = aa
+            count += 1
+        aa2 = aa2 - di
+        if (aa2 < 0):
             count = -1
             break
-        d = 2*zz - d
+        di = 2*oo - di
 
-    print (cc)
+    print (count)
 else:
     print (-1)
